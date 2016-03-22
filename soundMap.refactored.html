@@ -1,0 +1,81 @@
+<html>
+<head>
+
+    <title>State College Sound</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
+    <link rel="stylesheet" href="soundMap/soundMapStyle.css" />
+    <link rel="stylesheet" href="soundMap/leaflet.tooltip.css"/>
+  
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+    <script src="soundMap/leaflet.tooltip.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="soundMap/d3.parcoords.css">
+    <script src="soundMap/d3.min.js"></script>
+    <script src="soundMap/d3.parcoords.js"></script>
+  
+    <script src="soundMap/testSound.js"></script>
+    <script src="soundMap/SoundMapScript.js"></script>
+
+</head>
+
+<body>
+
+    <div id="mapContainer"></div>
+
+
+    <div id="NE">
+    
+        <div id="soundPlot" class="parcoords" style="width:30%; height:100%"></div>
+
+    </div>
+
+
+    <div id = "legend" >
+
+        <img src="soundMap/MapLegend2.png" id="MapLegend">
+
+    </div>
+
+    
+    <div id="SW">
+    
+        <span id="A">Click a Point to Load Sound</span>
+    
+        <iframe id="embedPlayer" top="70%" width="100%" height="100%" style="background-color:transparent; display:block; max-width: 70%;" frameborder="0" allowtransparency="allowtransparency" scrolling="yes" src="" title="audioBoom player"></iframe> 
+
+    </div>
+
+    
+    <div id="SE">
+    
+        <span id=recordingLocation> 
+            Recording Location <br>
+            <input type="radio" name="recordingLocation" value="1" onclick="onRadioClick(this);">Street</button> <br>
+            <input type="radio" name="recordingLocation" value="2" onclick="onRadioClick(this);">Interior</button>
+        </span> 
+
+        <span id=locationTime>
+            Time <br>
+            <input type="radio" name="time" value="eight" onclick="onRadioClick(this);">8:00 PM</button> <br>
+            <input type="radio" name="time" value="eleven" onclick="onRadioClick(this);">11:00 PM</button> <br>
+            <input type="radio" name="time" value="two" onclick="onRadioClick(this);">2:00 AM</button> <br>
+        </span>
+
+        <span id=locationType> 
+            Location Type <br> 
+            <input type="radio" name="locationType" value="Bar" onclick="onRadioClick(this);">Bar</button> <br>
+            <input type="radio" name="locationType" value="Restaurant" onclick="onRadioClick(this);">Restaurant</button> <br>
+            <input type="radio" name="locationType" value="Residence" onclick="onRadioClick(this);">Residence</button> <br>
+        </span>
+	
+        <span id=Rest>
+            <button type="button" id="resetButton" onClick="resetModel();">Reset</button>
+        </span>
+    
+    </div>
+      
+</body>
+
+</html>
