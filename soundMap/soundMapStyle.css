@@ -1,0 +1,103 @@
+﻿html, body { width:100%; height:100%; margin:0; padding:0 }
+  		
+  		#mapContainer {
+        width: 	70%;
+        height:	68%;
+      }
+  		#NE { 
+        height:30%; 
+        width:100%; 
+        position:fixed; 
+        top:0;   
+        left:70%;  
+        bottom:30%;  
+        border: 2px solid #A3A3A3;
+        background-color: #3D3D3D;
+        color: white;
+        font-size: 30px;
+      }
+  		#SW { 
+        height:32%; 
+        width:100%; 
+        position:fixed; 
+        top:68%; 
+        left:0; 
+        right:75%;    
+        border: 2px solid #A3A3A3;
+        background-color: #3D3D3D;
+        color: white;
+        font-size: 30px;
+      }
+      #Legend { 
+        height:100%; 
+        width:100%; 
+        position:fixed; 
+        top:30%; 
+        left:70%; 
+        bottom: 68%;   
+        border: 2px solid #A3A3A3;
+        background-color: #3D3D3D;
+        color: white;
+        font-size: 30px;
+      }
+        #MapLegend {
+          height: 38%;
+          width:30%;
+          position: fixed;
+          left:70%;
+        }
+  		#SE { 
+        height:100%; 
+        width:100%; 
+        position:fixed; 
+        top:68%; 
+        left:70%;   
+        border: 2px solid #A3A3A3;
+        background-color: #3D3D3D;
+        color: white;
+        font-size: 20px;
+      } 
+        #recordingLocation{
+          position: fixed;
+          top:72%;
+          left:75%;
+        } 
+        #locationTime{
+          position: fixed;
+          top:85%;
+          left:75%;
+        }  
+        #locationType{
+          position: fixed;
+          top:85%;
+          left:85%;
+        }
+        #resetButton{
+            position: fixed;
+            top:77%;
+            left:88%;
+            background: #d93434;
+            background-image: -webkit-linear-gradient(top, #d93434, #b82b2b);
+            background-image: -moz-linear-gradient(top, #d93434, #b82b2b);
+            background-image: -ms-linear-gradient(top, #d93434, #b82b2b);
+            background-image: -o-linear-gradient(top, #d93434, #b82b2b);
+            background-image: linear-gradient(to bottom, #d93434, #b82b2b);
+            -webkit-border-radius: 28;
+            -moz-border-radius: 28;
+            border-radius: 28px;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 20px;
+            padding: 5px 10px 5px 10px;
+            border: solid #8c1f1f 2px;
+            text-decoration: none;
+            }
+        #resetButton:hover {
+            background: #fc3c3c;
+            background-image: -webkit-linear-gradient(top, #fc3c3c, #d93434);
+            background-image: -moz-linear-gradient(top, #fc3c3c, #d93434);
+            background-image: -ms-linear-gradient(top, #fc3c3c, #d93434);
+            background-image: -o-linear-gradient(top, #fc3c3c, #d93434);
+            background-image: linear-gradient(to bottom, #fc3c3c, #d93434);
+            text-decoration: none;
+        }
